@@ -1,0 +1,17 @@
+resource_group_name                                 = "My-Rg"
+resource_group_location                             = "CentralIndia"
+acr_name                                            = "myacr2000"
+acr_sku                                             = "Standard"
+acr_admin_enabled                                   =  false
+cluster_name                                        = "my-aks-cluster"
+kubernetes_version                                  = "1.26.3"
+node_pool_name                                      = "system"
+node_count                                          =  2
+node_pool_vm_size                                   = "Standard_D2_v2"
+node_pool_type                                      = "VirtualMachineScaleSets"
+node_pool_scaling                                   = false
+node_pool_zones                                     = [ 1,2,3 ]
+identity_type                                       = "SystemAssigned"
+lb_sku                                              = "standard"
+network_plugin                                      = "kubenet"
+dns_prefix                                          = "my-aks-cluster"
