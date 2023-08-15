@@ -9,6 +9,10 @@ version = "=3.69.0"
  
 provider "azurerm" {
  features {}
+client_id = "a5f2a640-a39f-4e8c-84d2-d0cf94b28dd2"
+client_secret = "1qy8Q~vk1TSPSp8lxTVi.NcEIj4lx7jOEaYUYbOU" 
+tenant_id = "209bec9c-f1e2-402b-a40a-a20137cb3ad1"
+subscription_id = "82407cff-0029-4672-bc70-dff34d3db1ee"
 }
 
 module "RG" {
